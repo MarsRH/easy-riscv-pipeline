@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -11.880
+TNS   : -1110.278
+
+Type  : Slow 1200mV 85C Model Setup 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -3.083
+TNS   : -9.200
+
+Type  : Slow 1200mV 85C Model Setup 'CLK1/2'
+Slack : -2.625
+TNS   : -258.658
+
+Type  : Slow 1200mV 85C Model Hold 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -4.938
+TNS   : -17.153
+
+Type  : Slow 1200mV 85C Model Hold 'CLK1/2'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -11.218
+TNS   : -1018.733
+
+Type  : Slow 1200mV 0C Model Setup 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -2.914
+TNS   : -8.785
+
+Type  : Slow 1200mV 0C Model Setup 'CLK1/2'
+Slack : -2.294
+TNS   : -231.111
+
+Type  : Slow 1200mV 0C Model Hold 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -4.431
+TNS   : -15.334
+
+Type  : Slow 1200mV 0C Model Hold 'CLK1/2'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -4.844
+TNS   : -354.982
+
+Type  : Fast 1200mV 0C Model Setup 'CLK1/2'
+Slack : -1.204
+TNS   : -40.695
+
+Type  : Fast 1200mV 0C Model Setup 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -0.922
+TNS   : -2.473
+
+Type  : Fast 1200mV 0C Model Hold 'ID_EXE:inst7|DFF32:inst7|Q_internal[12]'
+Slack : -2.440
+TNS   : -8.669
+
+Type  : Fast 1200mV 0C Model Hold 'CLK1/2'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.164
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 21 11:00:31 2024
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : RISC-V_32bit
+Top-level Entity Name : RISC-V_32bit
+Family : Cyclone III
+Total logic elements : 1,195
+    Total combinational functions : 903
+    Dedicated logic registers : 406
+Total registers : 406
+Total pins : 501
+Total virtual pins : 0
+Total memory bits : 263,168
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

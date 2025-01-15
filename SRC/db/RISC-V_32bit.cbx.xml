@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="RISC-V_32bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|EX:inst3|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_t7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|lpm_mux0:inst1|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_t7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|part1:inst2|lpm_add_sub1:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_msh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|part1:inst2|lpm_ram_dq2:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8lk1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|EX:inst3|lpm_add_sub0:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_2ph.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|ID:inst|register_files:inst|altsyncram:\regfile:registers_rtl_0" CBX_FILE_NAME="altsyncram_tpr1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|MEM:inst12|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_06g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RISC-V_32bit|part1:inst2|lpm_mux0:inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_t7e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

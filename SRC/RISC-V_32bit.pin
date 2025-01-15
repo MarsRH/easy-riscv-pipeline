@@ -1,0 +1,854 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
+ --           	    connect each pin marked GND* either individually through a 10k Ohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10k Ohm resistor
+ --           	    to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+CHIP  "RISC-V_32bit"  ASSIGNED TO AN: EP3C120F780C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+ID/EX_IMMI[18]               : A3        : output : 2.5 V             :         : 8         : N              
+WB_WBDATA[3]                 : A4        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+EX_READ_DATA[11]             : A6        : output : 2.5 V             :         : 8         : N              
+PC_INPUT[19]                 : A7        : input  : 2.5 V             :         : 8         : N              
+IF/ID_PC[5]                  : A8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+EX/MEM_DATA[30]              : A10       : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[26]                 : A11       : output : 2.5 V             :         : 8         : N              
+ID_IMMI[3]                   : A12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+EX/MEM_ADDR[29]              : A17       : output : 2.5 V             :         : 7         : N              
+IF/ID_INS[28]                : A18       : output : 2.5 V             :         : 7         : N              
+WB_WBDATA[29]                : A19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+IF_INS[31]                   : A21       : output : 2.5 V             :         : 7         : N              
+ID_CTL[1]                    : A22       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[27]                  : A23       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+ID/EX_IMMI[25]               : A25       : output : 2.5 V             :         : 7         : N              
+ID/EX_IMMI[30]               : A26       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+EX/MEM_DATA[12]              : AA3       : output : 2.5 V             :         : 2         : N              
+IF/ID_PC[3]                  : AA4       : output : 2.5 V             :         : 2         : N              
+ID/EX_IMMI[24]               : AA5       : output : 2.5 V             :         : 2         : N              
+ID/EX_PC[18]                 : AA6       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
+ID/EX_PC[27]                 : AA8       : output : 2.5 V             :         : 3         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+IF/ID_INS[0]                 : AA10      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+WB_WBDATA[18]                : AA12      : output : 2.5 V             :         : 3         : N              
+EX_READ_DATA[22]             : AA13      : output : 2.5 V             :         : 3         : N              
+EX/MEM_DATA[17]              : AA14      : output : 2.5 V             :         : 3         : N              
+IF/ID_INS[4]                 : AA15      : output : 2.5 V             :         : 4         : N              
+EX/MEM_ADDR[10]              : AA16      : output : 2.5 V             :         : 4         : N              
+ID_CTL[0]                    : AA17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+ID_IMMI[19]                  : AA19      : output : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+ID_IMMI[26]                  : AA21      : output : 2.5 V             :         : 4         : N              
+ID/EX_IMMI[26]               : AA22      : output : 2.5 V             :         : 5         : N              
+ID_IMMI[29]                  : AA23      : output : 2.5 V             :         : 5         : N              
+IF/ID_PC[16]                 : AA24      : output : 2.5 V             :         : 5         : N              
+ID/EX_INS[4]                 : AA25      : output : 2.5 V             :         : 5         : N              
+MEM_OUT_DATA[17]             : AA26      : output : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+WB_WBDATA[19]                : AB1       : output : 2.5 V             :         : 2         : N              
+ID/EX_PC[0]                  : AB2       : output : 2.5 V             :         : 2         : N              
+IF/ID_INS[25]                : AB3       : output : 2.5 V             :         : 2         : N              
+ID_IMMI[23]                  : AB4       : output : 2.5 V             :         : 2         : N              
+ID_IMMI[28]                  : AB5       : output : 2.5 V             :         : 2         : N              
+ID/EX_INS[15]                : AB6       : output : 2.5 V             :         : 2         : N              
+EX_READ_DATA[18]             : AB7       : output : 2.5 V             :         : 3         : N              
+IF_INS[23]                   : AB8       : output : 2.5 V             :         : 3         : N              
+IF_INS[21]                   : AB9       : output : 2.5 V             :         : 3         : N              
+ID/EX_IMMI[3]                : AB10      : output : 2.5 V             :         : 3         : N              
+IF/ID_INS[14]                : AB11      : output : 2.5 V             :         : 3         : N              
+IF/ID_PC[23]                 : AB12      : output : 2.5 V             :         : 3         : N              
+IF_INS[10]                   : AB13      : output : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[16]              : AB14      : output : 2.5 V             :         : 3         : N              
+IF_INS[0]                    : AB15      : output : 2.5 V             :         : 4         : N              
+EX/MEM_ADDR[6]               : AB16      : output : 2.5 V             :         : 4         : N              
+EX/MEM_DATA[11]              : AB17      : output : 2.5 V             :         : 4         : N              
+EX/MEM_DATA[25]              : AB18      : output : 2.5 V             :         : 4         : N              
+ID_CTL[7]                    : AB19      : output : 2.5 V             :         : 4         : N              
+count[2]                     : AB20      : output : 2.5 V             :         : 4         : N              
+ID/EX_IMMI[20]               : AB21      : output : 2.5 V             :         : 4         : N              
+ID_IMMI[25]                  : AB22      : output : 2.5 V             :         : 4         : N              
+ID/EX_IMMI[21]               : AB23      : output : 2.5 V             :         : 5         : N              
+WB_WBDATA[12]                : AB24      : output : 2.5 V             :         : 5         : N              
+ID/EX_IMMI[28]               : AB25      : output : 2.5 V             :         : 5         : N              
+PC_INPUT[13]                 : AB26      : input  : 2.5 V             :         : 5         : N              
+EX_READ_DATA[25]             : AB27      : output : 2.5 V             :         : 5         : N              
+ID/EX_PC[16]                 : AB28      : output : 2.5 V             :         : 5         : N              
+IF_INS[15]                   : AC1       : output : 2.5 V             :         : 2         : N              
+EX_RESULT[17]                : AC2       : output : 2.5 V             :         : 2         : N              
+EX_RESULT[30]                : AC3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+EX/MEM_ADDR[30]              : AC5       : output : 2.5 V             :         : 2         : N              
+GND                          : AC6       : gnd    :                   :         :           :                
+PC_INPUT[21]                 : AC7       : input  : 2.5 V             :         : 3         : N              
+EX_RESULT[22]                : AC8       : output : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+ID/EX_PC[8]                  : AC10      : output : 2.5 V             :         : 3         : N              
+EX/MEM_DATA[0]               : AC11      : output : 2.5 V             :         : 3         : N              
+ID/EX_PC[17]                 : AC12      : output : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+ID/EX_INS[12]                : AC14      : output : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[2]               : AC15      : output : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+IF/ID_PC[1]                  : AC17      : output : 2.5 V             :         : 4         : N              
+ID_CTL[6]                    : AC18      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[2]                  : AC19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+EX/MEM_ADDR[25]              : AC21      : output : 2.5 V             :         : 4         : N              
+WB_WBADDR[4]                 : AC22      : output : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+count[3]                     : AC24      : output : 2.5 V             :         : 5         : N              
+ID/EX_IMMI[22]               : AC25      : output : 2.5 V             :         : 5         : N              
+ID_IMMI[13]                  : AC26      : output : 2.5 V             :         : 5         : N              
+ID/EX_PC[15]                 : AC27      : output : 2.5 V             :         : 5         : N              
+IF/ID_PC[0]                  : AC28      : output : 2.5 V             :         : 5         : N              
+EX_RESULT[29]                : AD1       : output : 2.5 V             :         : 2         : N              
+IF_PC[18]                    : AD2       : output : 2.5 V             :         : 2         : N              
+PC_INPUT[11]                 : AD3       : input  : 2.5 V             :         : 2         : N              
+WB_WBADDR[2]                 : AD4       : output : 2.5 V             :         : 3         : N              
+WB_WBADDR[0]                 : AD5       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+ID_IMMI[30]                  : AD7       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[18]                 : AD8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+PC_INPUT[14]                 : AD10      : input  : 2.5 V             :         : 3         : N              
+IF/ID_INS[22]                : AD11      : output : 2.5 V             :         : 3         : N              
+EX_READ_DATA[27]             : AD12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+EX_RESULT[26]                : AD14      : output : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[3]               : AD15      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+IF_PC[28]                    : AD17      : output : 2.5 V             :         : 4         : N              
+WB_WBDATA[26]                : AD18      : output : 2.5 V             :         : 4         : N              
+ID_CTL[3]                    : AD19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+EX_RESULT[14]                : AD21      : output : 2.5 V             :         : 4         : N              
+ID_IMMI[20]                  : AD22      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+ID_IMMI[12]                  : AD24      : output : 2.5 V             :         : 4         : N              
+EX_RESULT[25]                : AD25      : output : 2.5 V             :         : 4         : N              
+IF_INS[13]                   : AD26      : output : 2.5 V             :         : 5         : N              
+WB_WBDATA[28]                : AD27      : output : 2.5 V             :         : 5         : N              
+ID/EX_INS[28]                : AD28      : output : 2.5 V             :         : 5         : N              
+EX/MEM_DATA[20]              : AE1       : output : 2.5 V             :         : 2         : N              
+IF/ID_INS[13]                : AE2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
+IF/ID_PC[12]                 : AE4       : output : 2.5 V             :         : 3         : N              
+IF/ID_INS[11]                : AE5       : output : 2.5 V             :         : 3         : N              
+ID/EX_IMMI[15]               : AE6       : output : 2.5 V             :         : 3         : N              
+IF/ID_PC[31]                 : AE7       : output : 2.5 V             :         : 3         : N              
+ID/EX_PC[19]                 : AE8       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[9]                  : AE9       : input  : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[23]              : AE10      : output : 2.5 V             :         : 3         : N              
+IF/ID_PC[4]                  : AE11      : output : 2.5 V             :         : 3         : N              
+IF_INS[19]                   : AE12      : output : 2.5 V             :         : 3         : N              
+MEM_OUT_DATA[20]             : AE13      : output : 2.5 V             :         : 3         : N              
+EX_READ_DATA[31]             : AE14      : output : 2.5 V             :         : 3         : N              
+ID/EX_IMMI[9]                : AE15      : output : 2.5 V             :         : 4         : N              
+IF_INS[2]                    : AE16      : output : 2.5 V             :         : 4         : N              
+IF_INS[3]                    : AE17      : output : 2.5 V             :         : 4         : N              
+EX_READ_DATA[14]             : AE18      : output : 2.5 V             :         : 4         : N              
+EX/MEM_DATA[14]              : AE19      : output : 2.5 V             :         : 4         : N              
+EX/MEM_ADDR[28]              : AE20      : output : 2.5 V             :         : 4         : N              
+IF/ID_INS[26]                : AE21      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[1]                  : AE22      : input  : 2.5 V             :         : 4         : N              
+ID/EX_IMMI[12]               : AE23      : output : 2.5 V             :         : 4         : N              
+ID_IMMI[24]                  : AE24      : output : 2.5 V             :         : 4         : N              
+EX/MEM_DATA[10]              : AE25      : output : 2.5 V             :         : 4         : N              
+ID/EX_INS[5]                 : AE26      : output : 2.5 V             :         : 5         : N              
+EX_RESULT[0]                 : AE27      : output : 2.5 V             :         : 5         : N              
+ID/EX_IMMI[5]                : AE28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+ID/EX_INS[23]                : AF2       : output : 2.5 V             :         : 2         : N              
+ID/EX_PC[12]                 : AF3       : output : 2.5 V             :         : 3         : N              
+ID_IMMI[17]                  : AF4       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[29]                 : AF5       : input  : 2.5 V             :         : 3         : N              
+ID_IMMI[22]                  : AF6       : output : 2.5 V             :         : 3         : N              
+ID/EX_PC[25]                 : AF7       : output : 2.5 V             :         : 3         : N              
+WB_WBDATA[0]                 : AF8       : output : 2.5 V             :         : 3         : N              
+ID/EX_INS[19]                : AF9       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[10]                 : AF10      : input  : 2.5 V             :         : 3         : N              
+WREN                         : AF11      : input  : 2.5 V             :         : 3         : N              
+IF/ID_PC[9]                  : AF12      : output : 2.5 V             :         : 3         : N              
+ID/EX_PC[31]                 : AF13      : output : 2.5 V             :         : 3         : N              
+EX_READ_DATA[17]             : AF14      : output : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[0]               : AF15      : output : 2.5 V             :         : 4         : N              
+IF_INS[1]                    : AF16      : output : 2.5 V             :         : 4         : N              
+MEM_OUT_DATA[9]              : AF17      : output : 2.5 V             :         : 4         : N              
+IF/ID_PC[6]                  : AF18      : output : 2.5 V             :         : 4         : N              
+WB_WBDATA[17]                : AF19      : output : 2.5 V             :         : 4         : N              
+ID/EX_PC[21]                 : AF20      : output : 2.5 V             :         : 4         : N              
+ID/EX_INS[6]                 : AF21      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[12]                 : AF22      : input  : 2.5 V             :         : 4         : N              
+ID_IMMI[21]                  : AF23      : output : 2.5 V             :         : 4         : N              
+MEM_OUT_DATA[28]             : AF24      : output : 2.5 V             :         : 4         : N              
+IF/ID_PC[11]                 : AF25      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[31]                 : AF26      : input  : 2.5 V             :         : 4         : N              
+count[1]                     : AF27      : output : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+ID/EX_IMMI[29]               : AG3       : output : 2.5 V             :         : 3         : N              
+IF_INS[20]                   : AG4       : output : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+ID/EX_PC[14]                 : AG6       : output : 2.5 V             :         : 3         : N              
+ID/EX_INS[22]                : AG7       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[22]                 : AG8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+ID/EX_INS[10]                : AG10      : output : 2.5 V             :         : 3         : N              
+ID/EX_PC[26]                 : AG11      : output : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[27]              : AG12      : output : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+GND+                         : AG14      :        :                   :         : 3         :                
+GND+                         : AG15      :        :                   :         : 4         :                
+GND                          : AG16      : gnd    :                   :         :           :                
+ID_CTL[2]                    : AG17      : output : 2.5 V             :         : 4         : N              
+IF_PC[21]                    : AG18      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[4]                  : AG19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+ID/EX_INS[8]                 : AG21      : output : 2.5 V             :         : 4         : N              
+WB_WBDATA[16]                : AG22      : output : 2.5 V             :         : 4         : N              
+IF/ID_PC[29]                 : AG23      : output : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+count[0]                     : AG25      : output : 2.5 V             :         : 4         : N              
+ID/EX_IMMI[14]               : AG26      : output : 2.5 V             :         : 4         : N              
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+IF_PC[12]                    : AH3       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[8]                  : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+IF/ID_PC[10]                 : AH6       : output : 2.5 V             :         : 3         : N              
+ID/EX_INS[0]                 : AH7       : output : 2.5 V             :         : 3         : N              
+IF/ID_PC[17]                 : AH8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+IF/ID_PC[19]                 : AH10      : output : 2.5 V             :         : 3         : N              
+PC_INPUT[23]                 : AH11      : input  : 2.5 V             :         : 3         : N              
+EX/MEM_ADDR[4]               : AH12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+GND+                         : AH14      :        :                   :         : 3         :                
+GND+                         : AH15      :        :                   :         : 4         :                
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+IF_PC[15]                    : AH17      : output : 2.5 V             :         : 4         : N              
+IF_INS[17]                   : AH18      : output : 2.5 V             :         : 4         : N              
+PC_INPUT[5]                  : AH19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+IF_INS[6]                    : AH21      : output : 2.5 V             :         : 4         : N              
+ID/EX_INS[29]                : AH22      : output : 2.5 V             :         : 4         : N              
+WB_WBDATA[8]                 : AH23      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+C0                           : AH25      : output : 2.5 V             :         : 4         : N              
+ID_IMMI[18]                  : AH26      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+ID/EX_IMMI[23]               : B3        : output : 2.5 V             :         : 8         : N              
+MEM_OUT_DATA[18]             : B4        : output : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+IF_PC[19]                    : B6        : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[27]                 : B7        : output : 2.5 V             :         : 8         : N              
+IF_PC[25]                    : B8        : output : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+IF_PC[4]                     : B10       : output : 2.5 V             :         : 8         : N              
+IF/ID_INS[9]                 : B11       : output : 2.5 V             :         : 8         : N              
+ID/EX_IMMI[1]                : B12       : output : 2.5 V             :         : 8         : N              
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+GND+                         : B15       :        :                   :         : 7         :                
+GND                          : B16       : gnd    :                   :         :           :                
+EX/MEM_ADDR[5]               : B17       : output : 2.5 V             :         : 7         : N              
+IF/ID_INS[7]                 : B18       : output : 2.5 V             :         : 7         : N              
+IF_PC[16]                    : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+WB_WBDATA[11]                : B21       : output : 2.5 V             :         : 7         : N              
+MEM_OUT_DATA[15]             : B22       : output : 2.5 V             :         : 7         : N              
+PC_INPUT[0]                  : B23       : input  : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+ID/EX_IMMI[19]               : B25       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[14]                  : B26       : output : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+EX/MEM_DATA[19]              : C2        : output : 2.5 V             :         : 1         : N              
+ID_IMMI[15]                  : C3        : output : 2.5 V             :         : 8         : N              
+PC_INPUT[24]                 : C4        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+ID/EX_PC[28]                 : C7        : output : 2.5 V             :         : 8         : N              
+WB_WBDATA[5]                 : C8        : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[2]                  : C9        : output : 2.5 V             :         : 8         : N              
+PC_INPUT[26]                 : C10       : input  : 2.5 V             :         : 8         : N              
+MEM_OUT_DATA[4]              : C11       : output : 2.5 V             :         : 8         : N              
+MEM_OUT_DATA[5]              : C12       : output : 2.5 V             :         : 8         : N              
+ID/EX_INS[25]                : C13       : output : 2.5 V             :         : 8         : N              
+EX_RESULT[19]                : C14       : output : 2.5 V             :         : 8         : N              
+EX_RESULT[18]                : C15       : output : 2.5 V             :         : 7         : N              
+EX/MEM_ADDR[1]               : C16       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[4]                 : C17       : output : 2.5 V             :         : 7         : N              
+ID_CTL[4]                    : C18       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[8]                   : C19       : output : 2.5 V             :         : 7         : N              
+EX/MEM_DATA[26]              : C20       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[9]                   : C21       : output : 2.5 V             :         : 7         : N              
+ID/EX_PC[6]                  : C22       : output : 2.5 V             :         : 7         : N              
+WB_WBDATA[9]                 : C23       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[16]                : C24       : output : 2.5 V             :         : 7         : N              
+ID/EX_INS[2]                 : C25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
+ID_IMMI[0]                   : C27       : output : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+MEM_OUT_DATA[3]              : D1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 1         :                
+ID/EX_IMMI[13]               : D4        : output : 2.5 V             :         : 8         : N              
+IF_INS[24]                   : D5        : output : 2.5 V             :         : 8         : N              
+ID/EX_PC[24]                 : D6        : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[25]                 : D7        : output : 2.5 V             :         : 8         : N              
+IF/ID_INS[10]                : D8        : output : 2.5 V             :         : 8         : N              
+EX/MEM_ADDR[19]              : D9        : output : 2.5 V             :         : 8         : N              
+PC_INPUT[25]                 : D10       : input  : 2.5 V             :         : 8         : N              
+ID/EX_PC[3]                  : D11       : output : 2.5 V             :         : 8         : N              
+EX_RESULT[23]                : D12       : output : 2.5 V             :         : 8         : N              
+ID_IMMI[1]                   : D13       : output : 2.5 V             :         : 8         : N              
+EX_RESULT[20]                : D14       : output : 2.5 V             :         : 8         : N              
+ID/EX_IMMI[4]                : D15       : output : 2.5 V             :         : 7         : N              
+EX/MEM_ADDR[11]              : D16       : output : 2.5 V             :         : 7         : N              
+EX/MEM_DATA[8]               : D17       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[12]                : D18       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[7]                   : D19       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[28]                : D20       : output : 2.5 V             :         : 7         : N              
+WB_WBDATA[7]                 : D21       : output : 2.5 V             :         : 7         : N              
+ID/EX_IMMI[31]               : D22       : output : 2.5 V             :         : 7         : N              
+WB_WBADDR[1]                 : D23       : output : 2.5 V             :         : 7         : N              
+EX/MEM_DATA[7]               : D24       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[15]                : D25       : output : 2.5 V             :         : 7         : N              
+EX_READ_DATA[30]             : D26       : output : 2.5 V             :         : 6         : N              
+EX_RESULT[24]                : D27       : output : 2.5 V             :         : 6         : N              
+IF/ID_INS[2]                 : D28       : output : 2.5 V             :         : 6         : N              
+IF_PC[27]                    : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+PC_INPUT[16]                 : E3        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+WB_WBADDR[3]                 : E5        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+IF_INS[29]                   : E7        : output : 2.5 V             :         : 8         : N              
+IF_PC[22]                    : E8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+EX/MEM_DATA[16]              : E10       : output : 2.5 V             :         : 8         : N              
+EX_READ_DATA[15]             : E11       : output : 2.5 V             :         : 8         : N              
+ID/EX_INS[24]                : E12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+MEM_OUT_DATA[27]             : E14       : output : 2.5 V             :         : 8         : N              
+EX_READ_DATA[5]              : E15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+IF/ID_INS[30]                : E17       : output : 2.5 V             :         : 7         : N              
+EX/MEM_ADDR[12]              : E18       : output : 2.5 V             :         : 7         : N              
+IF/ID_PC[21]                 : E19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+EX_RESULT[11]                : E21       : output : 2.5 V             :         : 7         : N              
+ID/EX_IMMI[16]               : E22       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+IF/ID_INS[12]                : E24       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[5]                 : E25       : output : 2.5 V             :         : 7         : N              
+IF_INS[12]                   : E26       : output : 2.5 V             :         : 6         : N              
+ID/EX_INS[30]                : E27       : output : 2.5 V             :         : 6         : N              
+WB_WBDATA[31]                : E28       : output : 2.5 V             :         : 6         : N              
+ID_IMMI[4]                   : F1        : output : 2.5 V             :         : 1         : N              
+IF_PC[14]                    : F2        : output : 2.5 V             :         : 1         : N              
+EX_RESULT[1]                 : F3        : output : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+WB_WBDATA[2]                 : F5        : output : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+IF/ID_PC[8]                  : F7        : output : 2.5 V             :         : 8         : N              
+ID/EX_PC[22]                 : F8        : output : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+ID/EX_PC[2]                  : F10       : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[18]                 : F11       : output : 2.5 V             :         : 8         : N              
+IF_PC[3]                     : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+EX_READ_DATA[21]             : F14       : output : 2.5 V             :         : 8         : N              
+EX/MEM_ADDR[15]              : F15       : output : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+ID/EX_INS[1]                 : F17       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[5]                   : F18       : output : 2.5 V             :         : 7         : N              
+EX_RESULT[27]                : F19       : output : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+ID_IMMI[16]                  : F21       : output : 2.5 V             :         : 7         : N              
+EX_READ_DATA[12]             : F22       : output : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
+MEM_OUT_DATA[25]             : F25       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[14]             : F26       : output : 2.5 V             :         : 6         : N              
+EX/MEM_DATA[2]               : F27       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[29]             : F28       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[31]             : G1        : output : 2.5 V             :         : 1         : N              
+IF/ID_INS[1]                 : G2        : output : 2.5 V             :         : 1         : N              
+WB_WBDATA[23]                : G3        : output : 2.5 V             :         : 1         : N              
+ID/EX_INS[9]                 : G4        : output : 2.5 V             :         : 1         : N              
+EX_READ_DATA[8]              : G5        : output : 2.5 V             :         : 1         : N              
+EX/MEM_ADDR[31]              : G6        : output : 2.5 V             :         : 1         : N              
+ID/EX_IMMI[17]               : G7        : output : 2.5 V             :         : 8         : N              
+WB_WBDATA[30]                : G8        : output : 2.5 V             :         : 8         : N              
+PC_INPUT[20]                 : G9        : input  : 2.5 V             :         : 8         : N              
+EX/MEM_DATA[1]               : G10       : output : 2.5 V             :         : 8         : N              
+IF/ID_PC[7]                  : G11       : output : 2.5 V             :         : 8         : N              
+IF/ID_INS[18]                : G12       : output : 2.5 V             :         : 8         : N              
+IF/ID_INS[15]                : G13       : output : 2.5 V             :         : 8         : N              
+EX/MEM_DATA[4]               : G14       : output : 2.5 V             :         : 8         : N              
+WB_WBDATA[15]                : G15       : output : 2.5 V             :         : 7         : N              
+WB_WBDATA[14]                : G16       : output : 2.5 V             :         : 7         : N              
+ID/EX_INS[27]                : G17       : output : 2.5 V             :         : 7         : N              
+ID/EX_INS[17]                : G18       : output : 2.5 V             :         : 7         : N              
+WB_WBDATA[10]                : G19       : output : 2.5 V             :         : 7         : N              
+EX_READ_DATA[7]              : G20       : output : 2.5 V             :         : 7         : N              
+ID/EX_PC[1]                  : G21       : output : 2.5 V             :         : 7         : N              
+MEM_OUT_DATA[6]              : G22       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
+WB_WBDATA[24]                : G24       : output : 2.5 V             :         : 6         : N              
+ID/EX_IMMI[11]               : G25       : output : 2.5 V             :         : 6         : N              
+WB_WBDATA[6]                 : G26       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[13]             : G27       : output : 2.5 V             :         : 6         : N              
+ID/EX_IMMI[10]               : G28       : output : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+EX_RESULT[6]                 : H3        : output : 2.5 V             :         : 1         : N              
+IF_INS[18]                   : H4        : output : 2.5 V             :         : 1         : N              
+WB_WBDATA[1]                 : H5        : output : 2.5 V             :         : 1         : N              
+IF_INS[8]                    : H6        : output : 2.5 V             :         : 1         : N              
+EX/MEM_ADDR[13]              : H7        : output : 2.5 V             :         : 1         : N              
+IF_INS[14]                   : H8        : output : 2.5 V             :         : 8         : N              
+GNDA3                        : H9        : gnd    :                   :         :           :                
+ID/EX_PC[9]                  : H10       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+EX/MEM_ADDR[21]              : H12       : output : 2.5 V             :         : 8         : N              
+IF_PC[9]                     : H13       : output : 2.5 V             :         : 8         : N              
+ID/EX_IMMI[8]                : H14       : output : 2.5 V             :         : 8         : N              
+EX/MEM_ADDR[24]              : H15       : output : 2.5 V             :         : 7         : N              
+EX/MEM_ADDR[8]               : H16       : output : 2.5 V             :         : 7         : N              
+MEM_OUT_DATA[7]              : H17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+IF_INS[26]                   : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+MEM_OUT_DATA[13]             : H21       : output : 2.5 V             :         : 7         : N              
+ID_IMMI[31]                  : H22       : output : 2.5 V             :         : 6         : N              
+EX/MEM_ADDR[14]              : H23       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 6         :                
+MEM_OUT_DATA[11]             : H25       : output : 2.5 V             :         : 6         : N              
+ID/EX_INS[7]                 : H26       : output : 2.5 V             :         : 6         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+CLK1/2                       : J1        : input  : 2.5 V             :         : 1         : N              
+CLK                          : J2        : input  : 2.5 V             :         : 1         : N              
+MEM_OUT_DATA[0]              : J3        : output : 2.5 V             :         : 1         : N              
+IF/ID_PC[22]                 : J4        : output : 2.5 V             :         : 1         : N              
+WB_WBDATA[4]                 : J5        : output : 2.5 V             :         : 1         : N              
+EX_READ_DATA[3]              : J6        : output : 2.5 V             :         : 1         : N              
+EX_READ_DATA[6]              : J7        : output : 2.5 V             :         : 1         : N              
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+IF/ID_PC[28]                 : J10       : output : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+EX_READ_DATA[16]             : J12       : output : 2.5 V             :         : 8         : N              
+MEM_OUT_DATA[2]              : J13       : output : 2.5 V             :         : 8         : N              
+EX_READ_DATA[23]             : J14       : output : 2.5 V             :         : 8         : N              
+ID_IMMI[10]                  : J15       : output : 2.5 V             :         : 7         : N              
+MEM_OUT_DATA[12]             : J16       : output : 2.5 V             :         : 7         : N              
+IF_INS[16]                   : J17       : output : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+PC_INPUT[17]                 : J19       : input  : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+EX/MEM_DATA[6]               : J22       : output : 2.5 V             :         : 6         : N              
+IF/ID_INS[8]                 : J23       : output : 2.5 V             :         : 6         : N              
+IF/ID_INS[29]                : J24       : output : 2.5 V             :         : 6         : N              
+PC_INPUT[27]                 : J25       : input  : 2.5 V             :         : 6         : N              
+EX/MEM_DATA[5]               : J26       : output : 2.5 V             :         : 6         : N              
+GND+                         : J27       :        :                   :         : 6         :                
+GND+                         : J28       :        :                   :         : 6         :                
+PC_INPUT[28]                 : K1        : input  : 2.5 V             :         : 1         : N              
+ID_IMMI[2]                   : K2        : output : 2.5 V             :         : 1         : N              
+ID/EX_PC[30]                 : K3        : output : 2.5 V             :         : 1         : N              
+MEM_OUT_DATA[30]             : K4        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+MEM_OUT_DATA[24]             : K7        : output : 2.5 V             :         : 1         : N              
+IF_INS[9]                    : K8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+EX/MEM_DATA[9]               : K21       : output : 2.5 V             :         : 6         : N              
+ID_IMMI[6]                   : K22       : output : 2.5 V             :         : 6         : N              
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+MEM_OUT_DATA[8]              : K25       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[1]              : K26       : output : 2.5 V             :         : 6         : N              
+IF_PC[13]                    : K27       : output : 2.5 V             :         : 6         : N              
+IF/ID_INS[17]                : K28       : output : 2.5 V             :         : 6         : N              
+EX_RESULT[2]                 : L1        : output : 2.5 V             :         : 1         : N              
+EX/MEM_DATA[3]               : L2        : output : 2.5 V             :         : 1         : N              
+MEM_OUT_DATA[19]             : L3        : output : 2.5 V             :         : 1         : N              
+EX/MEM_DATA[28]              : L4        : output : 2.5 V             :         : 1         : N              
+IF_INS[25]                   : L5        : output : 2.5 V             :         : 1         : N              
+IF_PC[7]                     : L6        : output : 2.5 V             :         : 1         : N              
+IF_PC[2]                     : L7        : output : 2.5 V             :         : 1         : N              
+IF_PC[24]                    : L8        : output : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+WB_WBDATA[25]                : L21       : output : 2.5 V             :         : 6         : N              
+EX_RESULT[9]                 : L22       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[28]             : L23       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[10]             : L24       : output : 2.5 V             :         : 6         : N              
+WB_WBDATA[13]                : L25       : output : 2.5 V             :         : 6         : N              
+EX/MEM_ADDR[18]              : L26       : output : 2.5 V             :         : 6         : N              
+ID/EX_INS[16]                : L27       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[4]              : L28       : output : 2.5 V             :         : 6         : N              
+EX/MEM_DATA[29]              : M1        : output : 2.5 V             :         : 1         : N              
+EX_READ_DATA[1]              : M2        : output : 2.5 V             :         : 1         : N              
+IF_INS[27]                   : M3        : output : 2.5 V             :         : 1         : N              
+IF/ID_INS[24]                : M4        : output : 2.5 V             :         : 1         : N              
+IF/ID_INS[16]                : M5        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+ID/EX_IMMI[0]                : M7        : output : 2.5 V             :         : 1         : N              
+IF_PC[5]                     : M8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+ID/EX_PC[7]                  : M21       : output : 2.5 V             :         : 6         : N              
+MSEL2                        : M22       :        :                   :         : 6         :                
+EX_READ_DATA[29]             : M23       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[9]              : M24       : output : 2.5 V             :         : 6         : N              
+EX/MEM_ADDR[7]               : M25       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[2]              : M26       : output : 2.5 V             :         : 6         : N              
+IF/ID_PC[24]                 : M27       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[19]             : M28       : output : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+IF_PC[11]                    : N3        : output : 2.5 V             :         : 1         : N              
+EX/MEM_ADDR[9]               : N4        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+EX/MEM_DATA[24]              : N8        : output : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+EX/MEM_DATA[18]              : N21       : output : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+IF_PC[8]                     : N25       : output : 2.5 V             :         : 6         : N              
+EX_READ_DATA[0]              : N26       : output : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+EX_READ_DATA[24]             : P1        : output : 2.5 V             :         : 1         : N              
+IF/ID_INS[19]                : P2        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+IF/ID_INS[5]                 : P21       : output : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+ID/EX_IMMI[2]                : P25       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[23]             : P26       : output : 2.5 V             :         : 6         : N              
+EX_RESULT[10]                : P27       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+MEM_OUT_DATA[26]             : R1        : output : 2.5 V             :         : 2         : N              
+EX_READ_DATA[26]             : R2        : output : 2.5 V             :         : 2         : N              
+PC_INPUT[7]                  : R3        : input  : 2.5 V             :         : 2         : N              
+ID/EX_PC[29]                 : R4        : output : 2.5 V             :         : 2         : N              
+IF_PC[0]                     : R5        : output : 2.5 V             :         : 2         : N              
+ID/EX_PC[10]                 : R6        : output : 2.5 V             :         : 2         : N              
+ID/EX_INS[3]                 : R7        : output : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+IF/ID_INS[31]                : R21       : output : 2.5 V             :         : 5         : N              
+EX/MEM_ADDR[20]              : R22       : output : 2.5 V             :         : 5         : N              
+EX/MEM_DATA[27]              : R23       : output : 2.5 V             :         : 5         : N              
+IF/ID_PC[15]                 : R24       : output : 2.5 V             :         : 5         : N              
+IF_INS[11]                   : R25       : output : 2.5 V             :         : 5         : N              
+IF_PC[6]                     : R26       : output : 2.5 V             :         : 5         : N              
+PC_INPUT[6]                  : R27       : input  : 2.5 V             :         : 5         : N              
+ID/EX_IMMI[7]                : R28       : output : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+IF_PC[1]                     : T3        : output : 2.5 V             :         : 2         : N              
+PC_INPUT[3]                  : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+ID/EX_PC[4]                  : T7        : output : 2.5 V             :         : 2         : N              
+EX/MEM_DATA[31]              : T8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+ID/EX_INS[14]                : T21       : output : 2.5 V             :         : 5         : N              
+IF_PC[10]                    : T22       : output : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+EX_READ_DATA[20]             : T25       : output : 2.5 V             :         : 5         : N              
+IF/ID_PC[30]                 : T26       : output : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+IF/ID_INS[20]                : U1        : output : 2.5 V             :         : 2         : N              
+MEM_OUT_DATA[21]             : U2        : output : 2.5 V             :         : 2         : N              
+IF_INS[22]                   : U3        : output : 2.5 V             :         : 2         : N              
+IF/ID_PC[20]                 : U4        : output : 2.5 V             :         : 2         : N              
+EX/MEM_DATA[21]              : U5        : output : 2.5 V             :         : 2         : N              
+IF/ID_INS[23]                : U6        : output : 2.5 V             :         : 2         : N              
+ID/EX_PC[13]                 : U7        : output : 2.5 V             :         : 2         : N              
+IF_INS[30]                   : U8        : output : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+IF_PC[29]                    : U21       : output : 2.5 V             :         : 5         : N              
+EX/MEM_DATA[15]              : U22       : output : 2.5 V             :         : 5         : N              
+IF/ID_INS[27]                : U23       : output : 2.5 V             :         : 5         : N              
+EX_RESULT[8]                 : U24       : output : 2.5 V             :         : 5         : N              
+ID/EX_PC[11]                 : U25       : output : 2.5 V             :         : 5         : N              
+IF/ID_INS[6]                 : U26       : output : 2.5 V             :         : 5         : N              
+IF_PC[23]                    : U27       : output : 2.5 V             :         : 5         : N              
+IF_INS[4]                    : U28       : output : 2.5 V             :         : 5         : N              
+WB_WBDATA[20]                : V1        : output : 2.5 V             :         : 2         : N              
+ID/EX_INS[21]                : V2        : output : 2.5 V             :         : 2         : N              
+IF/ID_INS[21]                : V3        : output : 2.5 V             :         : 2         : N              
+IF/ID_PC[14]                 : V4        : output : 2.5 V             :         : 2         : N              
+PC_INPUT[15]                 : V5        : input  : 2.5 V             :         : 2         : N              
+ID/EX_INS[20]                : V6        : output : 2.5 V             :         : 2         : N              
+IF_INS[7]                    : V7        : output : 2.5 V             :         : 2         : N              
+ID/EX_INS[18]                : V8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+ID/EX_IMMI[6]                : V21       : output : 2.5 V             :         : 5         : N              
+EX_RESULT[21]                : V22       : output : 2.5 V             :         : 5         : N              
+IF/ID_INS[3]                 : V23       : output : 2.5 V             :         : 5         : N              
+IF_PC[31]                    : V24       : output : 2.5 V             :         : 5         : N              
+IF_PC[26]                    : V25       : output : 2.5 V             :         : 5         : N              
+ID/EX_PC[5]                  : V26       : output : 2.5 V             :         : 5         : N              
+ID/EX_INS[13]                : V27       : output : 2.5 V             :         : 5         : N              
+EX/MEM_ADDR[17]              : V28       : output : 2.5 V             :         : 5         : N              
+EX_RESULT[7]                 : W1        : output : 2.5 V             :         : 2         : N              
+IF_INS[28]                   : W2        : output : 2.5 V             :         : 2         : N              
+EX/MEM_DATA[13]              : W3        : output : 2.5 V             :         : 2         : N              
+ID_IMMI[11]                  : W4        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+IF_PC[20]                    : W7        : output : 2.5 V             :         : 2         : N              
+ID/EX_IMMI[27]               : W8        : output : 2.5 V             :         : 2         : N              
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+EX_RESULT[31]                : W21       : output : 2.5 V             :         : 5         : N              
+IF_PC[30]                    : W22       : output : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+MEM_OUT_DATA[10]             : W25       : output : 2.5 V             :         : 5         : N              
+MEM_OUT_DATA[16]             : W26       : output : 2.5 V             :         : 5         : N              
+EX/MEM_ADDR[26]              : W27       : output : 2.5 V             :         : 5         : N              
+MEM_OUT_DATA[22]             : W28       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y1        :        :                   :         : 2         :                
+GND+                         : Y2        :        :                   :         : 2         :                
+WB_WBDATA[21]                : Y3        : output : 2.5 V             :         : 2         : N              
+EX/MEM_ADDR[22]              : Y4        : output : 2.5 V             :         : 2         : N              
+IF_INS[5]                    : Y5        : output : 2.5 V             :         : 2         : N              
+WB_WBDATA[27]                : Y6        : output : 2.5 V             :         : 2         : N              
+ID/EX_INS[11]                : Y7        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+ID/EX_PC[20]                 : Y10       : output : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+EX/MEM_DATA[23]              : Y12       : output : 2.5 V             :         : 3         : N              
+EX_RESULT[3]                 : Y13       : output : 2.5 V             :         : 3         : N              
+ID/EX_INS[31]                : Y14       : output : 2.5 V             :         : 3         : N              
+ID/EX_INS[26]                : Y15       : output : 2.5 V             :         : 3         : N              
+PC_INPUT[30]                 : Y16       : input  : 2.5 V             :         : 4         : N              
+ID_CTL[5]                    : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+EX/MEM_DATA[22]              : Y19       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+IF_PC[17]                    : Y22       : output : 2.5 V             :         : 5         : N              
+IF/ID_PC[13]                 : Y23       : output : 2.5 V             :         : 5         : N              
+ID/EX_PC[23]                 : Y24       : output : 2.5 V             :         : 5         : N              
+WB_WBDATA[22]                : Y25       : output : 2.5 V             :         : 5         : N              
+EX_RESULT[13]                : Y26       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y27       :        :                   :         : 5         :                
+GND+                         : Y28       :        :                   :         : 5         :                

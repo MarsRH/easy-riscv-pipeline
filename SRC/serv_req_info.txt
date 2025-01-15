@@ -1,0 +1,114 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x77b3e43e: ntdll + 0x2e43e (RtlInitUnicodeString + 0x196)
+	0x77b3e0a2: ntdll + 0x2e0a2 (RtlFreeHeap + 0x7d)
+	0x75e4c270: SHELL32 + 0xac270 (SHGetDiskFreeSpaceExW + 0x1b7e)
+	0x75e264fe: SHELL32 + 0x864fe (SHGetFolderPathW + 0xf06)
+	0x75e264f0: SHELL32 + 0x864f0 (SHGetFolderPathW + 0xef8)
+	0x75e264b7: SHELL32 + 0x864b7 (SHGetFolderPathW + 0xebf)
+	0x75e26656: SHELL32 + 0x86656 (SHGetFolderPathW + 0x105e)
+	0x75e26628: SHELL32 + 0x86628 (SHGetFolderPathW + 0x1030)
+	0x75e265f6: SHELL32 + 0x865f6 (SHGetFolderPathW + 0xffe)
+	0x75e265b5: SHELL32 + 0x865b5 (SHGetFolderPathW + 0xfbd)
+	0x75e25cc4: SHELL32 + 0x85cc4 (SHGetFolderPathW + 0x6cc)
+	0x75e2616f: SHELL32 + 0x8616f (SHGetFolderPathW + 0xb77)
+	0x75e25f34: SHELL32 + 0x85f34 (SHGetFolderPathW + 0x93c)
+	0x75e21286: SHELL32 + 0x81286 (SHRestricted + 0x22b3)
+	0x77b49363: ntdll + 0x39363 (RtlQueryEnvironmentVariable + 0x244)
+	0x77b68f67: ntdll + 0x58f67 (LdrShutdownProcess + 0x140)
+	0x77b68e09: ntdll + 0x58e09 (RtlExitUserProcess + 0x73)
+	0x755079c4: kernel32 + 0x179c4 (ExitProcess + 0x14)
+	0x71e921cb: MSVCR90 + 0x221cb (_amsg_exit + 0x74)
+	0x71e92410: MSVCR90 + 0x22410 (_get_pgmptr + 0x195)
+	0x71e92465: MSVCR90 + 0x22465 (exit + 0x10)
+	0x0044f443: quartus + 0x4f443 (Pjm_Uninit + 0x40203)
+	0x75503369: kernel32 + 0x13369 (BaseThreadInitThunk + 0x11)
+	0x77b49901: ntdll + 0x39901 (RtlInitializeExceptionChain + 0x62)
+	0x77b498d4: ntdll + 0x398d4 (RtlInitializeExceptionChain + 0x35)
+	0xffffffffffffffff:
+	</callstack>
+	<error>Access Violation at 0X77B3E43E</error>
+	<date>Sat Oct 19 21:16:34 2024</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>Access Violation at 0X77B3E43E
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>FTM</sub_system>
+	<file>/quartus/synth/ftm/ftm_tgx_atom_builder.cpp</file>
+	<line>1263</line>
+	<callstack>
+	0x065ac0bc: SYNTH_FTM + 0x13c0bc (?map_latch_to_comb_lcell@FTM_TGX_ATOM_BUILDER@@AAIXPAVCDB_ATOM_NODE@@PAVCDB_SGATE_NODE@@@Z + 0x3dc)
+	0x065abb50: SYNTH_FTM + 0x13bb50 (?map_non_wys_sgate@FTM_TGX_ATOM_BUILDER@@AAIXPAVCDB_SGATE_NODE@@PAV?$list@PAVCDB_SGATE_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_SGATE_NODE@@@@@_Dinkum_std@@@Z + 0x350)
+	0x04161902: db_cdb_sgate + 0x21902 (?delete_node@CDB_SGATE_NETLIST@@QAI_NViterator@?$list@PAVCDB_SGATE_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_SGATE_NODE@@@@@_Dinkum_std@@@Z + 0x52)
+	0x064856b8: SYNTH_FTM + 0x156b8 (?map_wys_sgate@FTM_ATOM_BUILDER@@IAIXPAVCDB_SGATE_WYSIWYG@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0x88)
+	0x065acafd: SYNTH_FTM + 0x13cafd (?build_atom_network@FTM_TGX_ATOM_BUILDER@@UAIXPAVCDB_SGATE_NETLIST@@PAV?$list@PAVCDB_ATOM_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_ATOM_NODE@@@@@_Dinkum_std@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0x1bd)
+	0x064902ec: SYNTH_FTM + 0x202ec (?build_atoms@FTM_ROOT_IMPL@@AAIXXZ + 0xbfc)
+	0x0648b2ce: SYNTH_FTM + 0x1b2ce (?start_normal_flow@FTM_ROOT_IMPL@@AAIPAVCDB_ATOM_NETLIST@@XZ + 0x19e)
+	0x0648a3bd: SYNTH_FTM + 0x1a3bd (?start@FTM_ROOT@@QAIPAVCDB_ATOM_NETLIST@@PAVCDB_SGATE_NETLIST@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0xfd)
+	0x03764231: SYNTH_SCL + 0x64231 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x60151)
+	0x0162a128: ccl_mem + 0xa128 (?mem_realloc_wrapper@@YIPAXPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x188)
+	0x5179a4db: MSVCR90 + 0x3a4db (_time64 + 0x2f)
+	0x037649df: SYNTH_SCL + 0x649df (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x608ff)
+	0x03799f46: SYNTH_SCL + 0x99f46 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x95e66)
+	0x03799f5d: SYNTH_SCL + 0x99f5d (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x95e7d)
+	0x03763e33: SYNTH_SCL + 0x63e33 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x5fd53)
+	0x0371f045: SYNTH_SCL + 0x1f045 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x1af65)
+	0x037223e1: SYNTH_SCL + 0x223e1 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x1e301)
+	0x037282d2: SYNTH_SCL + 0x282d2 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x241f2)
+	0x0372888d: SYNTH_SCL + 0x2888d (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x247ad)
+	0x01b229a0: db_cdb_mgr + 0x29a0 (?get_num_pwr_setting_tiles@CDB_PWR_TILE_SETTING_INFO@@QBIHXZ + 0x820)
+	0x017c255a: ccl_thr + 0x255a (thr_mutex_unlock + 0x5a)
+	0x01b32e6c: db_cdb_mgr + 0x12e6c (?get_db_entries@CDB_CMP_ENTRY@@SIPAVCDB_DB_ENTRIES@@PBDPA_N@Z + 0x28c)
+	0x016280b5: ccl_mem + 0x80b5 (?allocate@MEM_SEGMENT_INTERNAL@@QAIPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x95)
+	</callstack>
+	<error>id_vec.size() &gt;= 1</error>
+	<date>Sun Oct 20 17:03:05 2024</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>id_vec.size() &gt;= 1
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>FTM</sub_system>
+	<file>/quartus/synth/ftm/ftm_tgx_atom_builder.cpp</file>
+	<line>1263</line>
+	<callstack>
+	0x0641c0bc: SYNTH_FTM + 0x13c0bc (?map_latch_to_comb_lcell@FTM_TGX_ATOM_BUILDER@@AAIXPAVCDB_ATOM_NODE@@PAVCDB_SGATE_NODE@@@Z + 0x3dc)
+	0x0641bb50: SYNTH_FTM + 0x13bb50 (?map_non_wys_sgate@FTM_TGX_ATOM_BUILDER@@AAIXPAVCDB_SGATE_NODE@@PAV?$list@PAVCDB_SGATE_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_SGATE_NODE@@@@@_Dinkum_std@@@Z + 0x350)
+	0x040b1902: db_cdb_sgate + 0x21902 (?delete_node@CDB_SGATE_NETLIST@@QAI_NViterator@?$list@PAVCDB_SGATE_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_SGATE_NODE@@@@@_Dinkum_std@@@Z + 0x52)
+	0x062f56b8: SYNTH_FTM + 0x156b8 (?map_wys_sgate@FTM_ATOM_BUILDER@@IAIXPAVCDB_SGATE_WYSIWYG@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0x88)
+	0x0641cafd: SYNTH_FTM + 0x13cafd (?build_atom_network@FTM_TGX_ATOM_BUILDER@@UAIXPAVCDB_SGATE_NETLIST@@PAV?$list@PAVCDB_ATOM_NODE@@V?$MEM_STL_ALLOCATOR@PAVCDB_ATOM_NODE@@@@@_Dinkum_std@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0x1bd)
+	0x063002ec: SYNTH_FTM + 0x202ec (?build_atoms@FTM_ROOT_IMPL@@AAIXXZ + 0xbfc)
+	0x062fb2ce: SYNTH_FTM + 0x1b2ce (?start_normal_flow@FTM_ROOT_IMPL@@AAIPAVCDB_ATOM_NETLIST@@XZ + 0x19e)
+	0x062fa3bd: SYNTH_FTM + 0x1a3bd (?start@FTM_ROOT@@QAIPAVCDB_ATOM_NETLIST@@PAVCDB_SGATE_NETLIST@@PAVSCL_WYSIWYG_ATOM_FACTORY@@@Z + 0xfd)
+	0x03784231: SYNTH_SCL + 0x64231 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x60151)
+	0x0167a128: ccl_mem + 0xa128 (?mem_realloc_wrapper@@YIPAXPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x188)
+	0x5179a4db: MSVCR90 + 0x3a4db (_time64 + 0x2f)
+	0x037849df: SYNTH_SCL + 0x649df (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x608ff)
+	0x037b9f46: SYNTH_SCL + 0x99f46 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x95e66)
+	0x037b9f5d: SYNTH_SCL + 0x99f5d (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x95e7d)
+	0x03783e33: SYNTH_SCL + 0x63e33 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x5fd53)
+	0x0373f045: SYNTH_SCL + 0x1f045 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x1af65)
+	0x037423e1: SYNTH_SCL + 0x223e1 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x1e301)
+	0x037482d2: SYNTH_SCL + 0x282d2 (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x241f2)
+	0x0374888d: SYNTH_SCL + 0x2888d (?scl_start@@YI_NPAVCMP_FACADE@@_N@Z + 0x247ad)
+	0x02aa29a0: db_cdb_mgr + 0x29a0 (?get_num_pwr_setting_tiles@CDB_PWR_TILE_SETTING_INFO@@QBIHXZ + 0x820)
+	0x017f255a: ccl_thr + 0x255a (thr_mutex_unlock + 0x5a)
+	0x02ab2e6c: db_cdb_mgr + 0x12e6c (?get_db_entries@CDB_CMP_ENTRY@@SIPAVCDB_DB_ENTRIES@@PBDPA_N@Z + 0x28c)
+	0x016780b5: ccl_mem + 0x80b5 (?allocate@MEM_SEGMENT_INTERNAL@@QAIPAXIPAVMEM_TRACKER_THUNK@@PBD@Z + 0x95)
+	</callstack>
+	<error>id_vec.size() &gt;= 1</error>
+	<date>Sun Oct 20 17:03:26 2024</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>id_vec.size() &gt;= 1
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
